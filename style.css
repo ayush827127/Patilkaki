@@ -80,7 +80,7 @@ h1 {
 .about-box-1 {
   border-radius: 20px;
   margin: 10px;
-  background-image: url(/photos/about.png);
+  background-image: url(photos/about.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
