@@ -1,0 +1,273 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(GeneralSans-Regular.otf);
+}
+
+:root {
+  --primary-color: rgb(26, 22, 70);
+  --secondary-color: #ffffff;
+  --button-color: rgb(241, 183, 21);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: myFirstFont;
+  font-weight: lighter;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: medium;
+}
+
+#hero-section p {
+  font-size: 1.1rem;
+}
+
+#hero-section {
+  background-color: var(--primary-color);
+}
+
+.logo img {
+  max-width: 130px;
+}
+.box {
+  border: 1px solid white;
+  border-radius: 5px;
+  max-width: 130px;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.reg-button {
+  background-color: var(--button-color);
+  color: rgb(26, 22, 70);
+  max-width: 440px;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: 500;
+}
+.reg-button strike {
+  color: var(--primary-color);
+  font-size: 23px;
+  font-weight: 500;
+}
+.discount-link {
+  margin-top: 10px;
+  padding: inherit;
+}
+.discount-link a {
+  color: white;
+}
+
+#about h1,
+#about p {
+  color: black;
+}
+#about p {
+  font-family: myFirstFont;
+  font-size: 1.125em;
+}
+
+#about h1 span {
+  color: #afa191;
+}
+
+.about-box-1 {
+  border-radius: 20px;
+  margin: 10px;
+  background-image: url(/photos/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-box-2 {
+  border-radius: 20px;
+  margin: 10px;
+  background-color: rgb(235, 233, 226);
+}
+
+.about-box-2 ol {
+  padding: 2.5rem 2rem;
+  text-align: justify;
+}
+
+.about-box-2 ol li {
+  background-color: rgb(235, 233, 226);
+  color: black;
+  padding: 5px;
+}
+
+#about span {
+  font-weight: bold;
+  color: black;
+}
+
+#marketing-section h2 {
+  font-family: myFirstFont;
+  font-weight: 900;
+  color: black;
+}
+
+#marketing-section h2:nth-child(1) {
+  color: #e8532b;
+}
+
+#marketing-section p {
+  color: black;
+  font-size: 1.2rem;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+#timer-section {
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+}
+
+#timer-section h3,
+.timer {
+  font-family: myFirstFont;
+  font-weight: bold;
+  font-size: 30px;
+}
+.timer {
+  font-size: 50px;
+}
+
+#timer-section .reg-button ,#timer-section strike  {
+  font-size: 31px;
+}
+
+#crash-course-section{
+  background-color: var(--primary-color);
+}
+
+.crash-course-box{
+  border: 1px solid white;
+  background-color: #131033;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.crash-course-box:nth-child(1){
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.crash-course-box:nth-child(2){
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.crash-course-box h3{
+  font-weight: bold;
+  font-size: 30px;
+  margin: 1.7rem;
+}
+.crash-course-box ol li {
+  color: rgb(235, 233, 226);
+  list-style:disc;
+  padding: 5px;
+}
+
+.crash-course-price{
+  color: var(--button-color);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.crash-course-price strike{
+  color: rgb(235, 233, 226);
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+
+#cta{
+  height: 640px;
+  background-image: url(photos/footer.png) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* opacity: 0.6; */
+  position: relative;
+}
+
+.cta-box{
+  color: black;
+  border: 1px solid black;
+  max-width: 350px;
+  padding: 10px;
+  background-color: #f2e4d2;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  animation: slideUp 1.5s ease forwards; 
+  animation-delay: 15s;
+  display: block;
+}
+
+@keyframes slideUp {
+  from {
+      bottom: 0% ; 
+  }
+  to {
+      bottom: 40%; 
+  }
+}
+ #cross{
+  color: black;
+  text-align: end;
+  font-size: medium;
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#cross:hover{
+  cursor: pointer;
+}
+
+.remove{
+  display: none;
+}
+.cta-box h3{
+  color: #000000;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  font-style:normal;
+}
+.cta-box p {
+  color: #000000;
+  font-size: 17px;
+  text-align: center;
+  font-style:normal;
+}
+.cta-box form {
+  justify-content: center;
+  text-align: center;
+}
+.cta-box form label{
+  margin: 5px;
+  width: -webkit-fill-available;
+}
+.cta-box form label input{
+  width: -webkit-fill-available;
+  padding: 10px;
+}
+
+.cta-box form button{
+  background-color: #e96733;
+  border: 1px solid #e96733;
+  border-radius: 5px;
+  padding: 10px;
+  width: -webkit-fill-available;
+}
